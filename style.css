@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(193, 208, 251);
+}
+
+.reach,.links{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reach h1{
+    font-size: 150px;
+}
+.links a,.links p{
+    font-size: 50px;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+.links svg{
+    height: 50px;
+    width: 50px;
+}
+
+.website{
+    color: gray;
+    transition: all 0.5s;
+}
+.website:hover{
+    background-color: gray;
+    color: white;
+}
+
+
+.instagram{
+    color: purple;
+    transition: all 0.5s;
+}
+.instagram:hover{
+    background-color: purple;
+    color: white;
+}
+
+
+.facebook{
+    color: blue;
+    transition: all 0.5s;
+}
+.facebook:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.whatsapp{
+    color: green;
+    transition: all 0.5s;
+}
+.whatsapp:hover{
+    background-color: green;
+    color: white;
+}
+
+
+.call{
+    color: black;
+    transition: all 0.5s;
+    
+}
+
+.call:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+@media (max-width:600px){
+    .reach{
+        height: auto;
+    }
+    .reach h1{
+        font-size: 120px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items:flex-start
+    }
+    .links svg{
+        display: block;
+    }
+}
