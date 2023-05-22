@@ -1,103 +1,106 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* border: 2spx solid red; */
 }
 
 body{
-    background-color: rgb(193, 208, 251);
-}
-
-.reach,.links{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.reach h1{
-    font-size: 150px;
-}
-.links a,.links p{
-    font-size: 50px;
+    background-color:rgb(39, 117, 91);
     padding: 20px;
-    text-decoration: none;
-    border-radius: 20px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 30px;
+    background-color:rgb(33, 210, 151) ;
+}
+.box img{
     margin: 10px;
 }
-.links svg{
-    height: 50px;
-    width: 50px;
+.box button{
+    margin: 10px;
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 30px 10px;
+    background-color: rgb(115, 194, 196);
 }
 
-.website{
-    color: gray;
-    transition: all 0.5s;
+.cards{
+    margin-top: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 90vh;
 }
-.website:hover{
-    background-color: gray;
+
+
+.links a{
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px;
     color: white;
+    margin: 10px;
 }
 
-
-.instagram{
-    color: purple;
-    transition: all 0.5s;
-}
-.instagram:hover{
+.insta{
     background-color: purple;
-    color: white;
-}
-
-
-.facebook{
-    color: blue;
     transition: all 0.5s;
 }
-.facebook:hover{
-    background-color: blue;
-    color: white;
+.insta:hover{
+    background-color: white;
+    color: purple;
 }
-
 
 .whatsapp{
-    color: green;
+    background-color: green;
     transition: all 0.5s;
 }
 .whatsapp:hover{
-    background-color: green;
-    color: white;
+    background-color: white;
+    color: green;
 }
-
-
-.call{
-    color: black;
+.facebook{
+    background-color: rgb(62, 62, 252);
     transition: all 0.5s;
-    
 }
-
-.call:hover{
+.facebook:hover{
+    background-color: white;
+    color: rgb(62, 62, 252);
+}
+.twitter{
+    background-color: rgb(0, 179, 255);
+    transition: all 0.5s;
+}
+.twitter:hover{
+    background-color: white;
+    color: rgb(0, 179, 255);
+}
+.github{
     background-color: black;
-    color: white;
+    transition: all 0.5s;
+}
+.github:hover{
+    background-color: white;
+    color: black;
 }
 
 
 
+.links{
+    background-color:rgb(16, 162, 113);
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 70%;
+    justify-content: space-around;
+    border-radius: 30px;
+}
 
-@media (max-width:600px){
-    .reach{
-        height: auto;
-    }
-    .reach h1{
-        font-size: 120px;
-    }
-    .links{
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        align-items:flex-start
-    }
-    .links svg{
-        display: block;
-    }
+.hide{
+    display: none;
 }
