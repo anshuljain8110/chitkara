@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:rgb(39, 117, 91);
+    background-color:#79E0EE;
     padding: 20px;
 }
 
@@ -15,18 +15,34 @@ body{
     align-items: center;
     /* justify-content: center; */
     border-radius: 30px;
-    background-color:rgb(33, 210, 151) ;
+    background-color:#98EECC ;
 }
+
+
 .box img{
     margin: 10px;
+    border-radius: 300px;
+    transform: rotate(-50deg);
+    transition: all 0.5s;
 }
+
+.box img:hover{
+    transform: rotate(0deg);
+}
+
+
+
 .box button{
     margin: 10px;
     padding: 15px;
-    background-color: aliceblue;
     border-radius: 30px 10px;
-    background-color: rgb(115, 194, 196);
+    background-color: #FBFFDC;
+    transition: all 0.5s;
 }
+
+.box button:hover{
+   border-radius: 10px 30px;
+} 
 
 .cards{
     margin-top: 30px;
@@ -47,51 +63,43 @@ body{
 }
 
 .insta{
-    background-color: purple;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
     transition: all 0.5s;
 }
 .insta:hover{
-    background-color: white;
-    color: purple;
+    border-radius: 5px 40px;
+    transform: rotate(5deg);
 }
 
 .whatsapp{
-    background-color: green;
+    background-color: rgb(13, 135, 121);
     transition: all 0.5s;
 }
 .whatsapp:hover{
     background-color: white;
-    color: green;
+    color: rgb(13, 135, 121);
 }
 .facebook{
-    background-color: rgb(62, 62, 252);
+    background-color: rgb(62, 78, 252);
     transition: all 0.5s;
 }
 .facebook:hover{
     background-color: white;
-    color: rgb(62, 62, 252);
-}
-.twitter{
-    background-color: rgb(0, 179, 255);
-    transition: all 0.5s;
-}
-.twitter:hover{
-    background-color: white;
-    color: rgb(0, 179, 255);
+    color: rgb(62, 78, 252);
 }
 .github{
     background-color: black;
     transition: all 0.5s;
 }
 .github:hover{
-    background-color: white;
-    color: black;
+    border-radius: 5px 40px;
+    transform: rotate(-5deg);
 }
 
 
 
 .links{
-    background-color:rgb(16, 162, 113);
+    background-color:#D0F5BE;
     position: sticky;
     display: flex;
     flex-direction: column;
